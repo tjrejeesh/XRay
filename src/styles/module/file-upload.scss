@@ -1,0 +1,99 @@
+.container{
+  width: 100%;
+  float: left;
+  margin-top: 74px;
+  .form-wrapper{
+    float: right;
+    right: 15%;
+    top: 46px;
+    position: relative;
+    .title{
+      align-items: center;
+      text-align: center;
+      background-color: $gray1;
+      border-radius: 10px;
+      box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+      border-collapse: collapse;
+      height: 74px;
+      opacity: 0.8;
+      img{
+        margin-top: 24px;
+      }
+    }
+    .upload{
+      width: 200px;
+      margin-top: 15px;
+      align-items: center;
+      text-align: center;
+      background-color: $gray1;
+      border-radius: 10px;
+      box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+      border-collapse: collapse;
+      height: 300px;
+      color: $white;
+      padding: 25px;
+      opacity: 0.8;
+      img{
+        margin-top: 15px;
+        border: 2px solid $white;
+      }
+      .error{
+        color: $red;
+        text-align: left;
+        margin-top: 10px;
+      }
+      label.locate-file input[type="file"] {
+        position:absolute;
+        top: -1000px;
+      }
+      .locate-file {
+        border: 2px solid $violet;
+        border-radius: 10px;
+        padding: 10px 26px;
+        margin: 2px;
+        background: $violet;
+        display: inline-block;
+      }
+      .locate-file:hover {
+        background: $violet;
+      }
+      .locate-file:active {
+        background: $violet;
+      }
+      .locate-file :invalid + span {
+        color: $white;
+      }
+      .locate-file :valid + span {
+        color: $white;
+      }
+    }
+
+    .image-pop {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted $gray1;
+    }
+
+    .image-pop .image-zoom {
+      visibility: hidden;
+      background-color: $gray1;
+      color: $white;
+      text-align: center;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      top: -36px;
+      right: 120%;
+      zoom: 2;
+      img{
+        margin-top: 0px;
+        border-radius: 6px;
+        border: none;
+      }
+    }
+
+    .image-pop:hover .image-zoom {
+      visibility: visible;
+    }
+  }
+}
